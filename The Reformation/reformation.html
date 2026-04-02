@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reformation Reading Levels</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .text-column {
+    flex: 2;
+  }
+  .image-column {
+    flex: 1;
+  }
+  .image-column img {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  p {
+    cursor: pointer;
+    padding: 8px;
+    border-left: 3px solid #4A90E2;
+    margin-bottom: 12px;
+  }
+  p:hover {
+    background-color: #f0f8ff;
+  }
+  .grade9 { color: black; }
+  .grade6 { color: blue; }
+  .grade4 { color: green; }
+
+  /* Tooltip styling */
+  .tooltip {
+    border-bottom: 1px dotted #000;
+    position: relative;
+    cursor: help;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 0.9em;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<h1>The Protestant Reformation</h1>
+
+<div class="container">
+  <div class="text-column">
+    <p class="toggle grade9" data-level="0"
+       data-level0='In the early 1500s, Europe entered a period of major change known as the <span class="tooltip">Reformation<span class="tooltiptext">A movement in the 1500s that challenged the Catholic Church and introduced new ideas about religion and freedom.</span></span>. The Reformation challenged the authority of the Catholic Church and introduced new ideas about religion, <span class="tooltip">liberty<span class="tooltiptext">Freedom to think and act independently.</span></span>, and individual choice. For centuries, the Church had been the most powerful <span class="tooltip">institution<span class="tooltiptext">An organization or establishment with influence in society.</span></span> in Europe. It influenced religion, politics, education, and daily life.'
+       data-level1='In the early 1500s, Europe went through a time of big change called the Reformation. People began to question the Catholic Church and new ideas about religion and freedom spread. The Church had been very powerful and influenced religion, government, and daily life.'
+       data-level2='In the early 1500s, Europe went through a big change called the Reformation. People started to question the Catholic Church and ideas about religion and freedom spread. The Church was very powerful and affected daily life.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='By the late Middle Ages, many questioned the Church. Some thought it had become too <span class="tooltip">wealthy<span class="tooltiptext">Having a lot of money or resources.</span></span> and <span class="tooltip">corrupt<span class="tooltiptext">Dishonest or unethical in order to gain power.</span></span>. Others felt leaders were not following the Bible. New ideas about freedom and individual rights spread, encouraging people to think for themselves and question authority.'
+       data-level1='By the end of the Middle Ages, many were unhappy with the Church. Some thought it had too much money or power. Others believed leaders were not following the Bible. Ideas about freedom and personal choice encouraged people to think for themselves.'
+       data-level2='Many people became unhappy with the Church. Some thought it had too much money or power. Others believed leaders did not follow the Bible. People began to think for themselves.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='One important invention was the <span class="tooltip">printing press<span class="tooltiptext">A machine for printing books and documents invented by Johannes Gutenberg.</span></span>. Before it, books were copied by hand and were rare and expensive. Most people could not read, and access to books was limited.'
+       data-level1='An important invention was the printing press. Before this, books were copied by hand, so they were rare and expensive. Most people could not read, and books were hard to find.'
+       data-level2='An important invention was the printing press. Before this, books were copied by hand and were hard to get.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='The printing press allowed books and pamphlets to be made quickly and cheaply. People could now read the Bible for themselves, often in their <span class="tooltip">vernacular<span class="tooltiptext">The local language spoken by ordinary people.</span></span> instead of Latin. This let people interpret religion without relying only on priests.'
+       data-level1='The printing press made books faster and cheaper. People could read the Bible in their own language, not just Latin, and understand religion themselves.'
+       data-level2='The printing press made books faster and cheaper. People could read the Bible in their own language and understand religion themselves.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='In 1517, Martin Luther, a German monk, challenged the Church over the sale of <span class="tooltip">indulgences<span class="tooltiptext">Payments to the Church in exchange for forgiveness of sins.</span></span>, which he believed were wrong and not supported by the Bible.'
+       data-level1='In 1517, Martin Luther, a German monk, challenged the Church about indulgences, which he thought were wrong.'
+       data-level2='In 1517, Martin Luther, a German monk, challenged the Church about indulgences.'>
+    </p>
+  </div>
+
+  <div class="image-column">
+    <img src="image" alt="Image for Paragraph 1">
+ 
+  </div>
+</div>
+<div class="container">
+  <div class="text-column">
+    <p class="toggle grade9" data-level="0"
+       data-level0='Luther wrote the <span class="tooltip">Ninety-Five Theses<span class="tooltiptext">A document listing 95 arguments against Church practices.</span></span>, posting it on a church door in Wittenberg. The printing press spread his ideas quickly across Europe.'
+       data-level1='Luther wrote the Ninety-Five Theses, posting it on a church door. The printing press helped his ideas spread quickly.'
+       data-level2='Luther wrote the Ninety-Five Theses and posted it. The printing press helped his ideas spread.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='Luther taught that people could have a personal connection with God through faith and reading the Bible, challenging the Church’s authority.'
+       data-level1='Luther taught that people could connect with God through their own faith and reading the Bible, challenging the Church’s power.'
+       data-level2='Luther said people could connect with God through their own faith and reading the Bible.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='New Christian groups called <span class="tooltip">Protestants<span class="tooltiptext">Christian groups that broke away from the Catholic Church during the Reformation.</span></span> formed. Other reformers, like John Calvin, shared their own interpretations of Christianity.'
+       data-level1='New Christian groups called Protestants formed. Other leaders, like John Calvin, shared their own religious ideas.'
+       data-level2='New Christian groups called Protestants formed. Other leaders shared new religious ideas.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='Europe became divided along religious lines. Some rulers supported the new ideas; others stayed loyal to the Catholic Church.'
+       data-level1='Europe had different religious groups. Some rulers supported new ideas, others stayed with the Church.'
+       data-level2='Europe had different religious groups. Some rulers supported new ideas, others stayed with the Church.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='The Reformation encouraged ideas about <span class="tooltip">liberty<span class="tooltiptext">Freedom to choose and act independently.</span></span> and individual rights, which would later influence political movements.'
+       data-level1='The Reformation encouraged ideas about freedom and personal rights, which would later affect politics.'
+       data-level2='The Reformation encouraged ideas about freedom and personal rights.'>
+    </p>
+  </div>
+
+  <div class="image-column">
+    <img src="image" alt="Image for Paragraph 6">
+    
+  </div>
+</div>
+<div class="container">
+  <div class="text-column">
+    <p class="toggle grade9" data-level="0"
+       data-level0='Conflicts occurred, such as the <span class="tooltip">German Peasants\' War<span class="tooltiptext">A revolt by peasants demanding better living conditions inspired by Reformation ideas.</span></span>. Peasants demanded fair treatment but were crushed by rulers.'
+       data-level1='Conflicts occurred, like the German Peasants’ War. Peasants asked for better lives but were defeated.'
+       data-level2='Conflicts occurred, like the German Peasants’ War. Peasants wanted better lives but lost.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='The Reformation split Christianity into <span class="tooltip">Catholicism<span class="tooltiptext">The branch of Christianity led by the Pope.</span></span> and Protestantism, weakened Church power, and spread ideas about individual freedom.'
+       data-level1='The Reformation split Christianity into Catholics and Protestants, made the Church less powerful, and spread ideas about freedom.'
+       data-level2='The Reformation split Christianity into Catholics and Protestants and spread ideas about freedom.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='The printing press showed how technology could quickly spread ideas and influence many people, a connection still important today.'
+       data-level1='The printing press showed how technology could spread ideas quickly, which is still important today.'
+       data-level2='The printing press showed how technology could spread ideas quickly.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='The Reformation was a turning point, reshaping Europe’s religion, politics, and society. Its impact is still seen in diverse beliefs and the importance of critical thinking and individual freedom.'
+       data-level1='The Reformation was a turning point in history, changing Europe’s religion, politics, and society. Its impact is still seen in beliefs and the value of freedom.'
+       data-level2='The Reformation was a turning point, changing Europe. Its impact is still seen in beliefs and freedom.'>
+    </p>
+
+    <p class="toggle grade9" data-level="0"
+       data-level0='Overall, the Reformation showed that ideas about faith, <span class="tooltip">liberty<span class="tooltiptext">Freedom to think and act independently.</span></span>, and personal choice could challenge even powerful institutions and change the course of history.'
+       data-level1='Overall, the Reformation showed that ideas about religion, freedom, and personal choice could challenge powerful institutions and change history.'
+       data-level2='Overall, the Reformation showed that ideas about religion, freedom, and personal choice could change history.'>
+    </p>
+  </div>
+
+  <div class="image-column">
+    <img src="image" alt="Image for Paragraph 11">
+    
+  </div>
+</div>
+<script>
+const paragraphs = document.querySelectorAll('.toggle');
+
+paragraphs.forEach(p => {
+  p.innerHTML = p.getAttribute('data-level0'); // Initialize Grade 9 version
+  p.className = 'toggle grade9';
+
+  p.addEventListener('click', () => {
+    let currentLevel = parseInt(p.getAttribute('data-level'));
+    currentLevel = (currentLevel + 1) % 3;
+    p.setAttribute('data-level', currentLevel);
+
+    if (currentLevel === 0) { 
+      p.innerHTML = p.getAttribute('data-level0'); 
+      p.className = 'toggle grade9';
+    } 
+    else if (currentLevel === 1) { 
+      p.innerHTML = p.getAttribute('data-level1'); 
+      p.className = 'toggle grade6';
+    } 
+    else { 
+      p.innerHTML = p.getAttribute('data-level2'); 
+      p.className = 'toggle grade4';
+    }
+  });
+});
+</script>
+</body>
+</html>
