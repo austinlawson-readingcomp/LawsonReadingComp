@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Franks - Reading Levels</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        gap: 20px;
+    }
+    .content {
+        flex: 2;
+    }
+    .para {
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        background-color: #f9f9f9;
+    }
+    .para:hover {
+        background-color: #eef;
+    }
+    /* Vocabulary hover tooltip */
+    .vocab {
+        border-bottom: 1px dotted #000;
+        position: relative;
+        cursor: help;
+    }
+    .vocab:hover::after {
+        content: attr(data-definition);
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #ffffcc;
+        color: #000;
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        white-space: pre-wrap;
+        z-index: 10;
+        width: max-content;
+        max-width: 250px;
+    }
+    /* Image column */
+    .image-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img-container {
+        position: relative;
+        text-align: center;
+    }
+    .img-container img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid #ccc;
+    }
+    .caption {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(255,255,255,0.8);
+        width: 100%;
+        text-align: center;
+        font-size: 0.9em;
+        padding: 2px 0;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+    .img-container:hover .caption {
+        opacity: 1;
+    }
+</style>
+</head>
+<body>
+
+<div class="content">
+
+<!-- Cambridge dictionary widget -->
+<form action='https://dictionary.cambridge.org/search/english/direct/' method='get' target='_blank'>
+    <input type='hidden' name='utm_source' value='widget_searchbox_source'/>
+    <input type='hidden' name='utm_medium' value='widget_searchbox'/>
+    <input type='hidden' name='utm_campaign' value='widget_tracking'/>
+    <table style='font-family:Arial,Helvetica,sans-serif;font-size:10px;background:#1D2A57;border-collapse:collapse;border-spacing:0;width:150px;background-image:linear-gradient(to right,#0f193d,#2c2f62,#1a2753)'>
+        <caption style='display:none;'>CUP free search box</caption>
+        <tbody>
+            <tr>
+                <td colspan='2' style='padding:0;background:none;border:none;'>
+                    <a href='https://dictionary.cambridge.org/' style='display:block;background:transparent url(https://dictionary.cambridge.org/external/images/freesearch/sbl.png?version=6.0.73) no-repeat 5px 6px;height:32px;'></a>
+                </td>
+            </tr>
+            <tr>
+                <td style='width:130px;background:none;border:none;padding:0;font-size:10px;border-collapse:collapse;border-spacing:0;'>
+                    <input style='margin:4px;padding:0 0 0 3px;display:block;font-family:Arial,Helvetica,sans-serif;font-size:10px;border:1px solid #ddd;border-radius:20px;box-shadow:inset 1px 1px 2px 0 rgba(0,0,0,0.1);color:#444;' name='q' placeholder='Search English' type='search' title='search' dir='auto' role='textbox' autocomplete='off' aria-controls='search' aria-multiline='false' aria-expanded='false' aria-label='Search' aria-required='true' aria-invalid='false' />
+                </td>
+                <td style='width:20px;background:none;border:none;padding:0 4px 0 0;font-size:10px;border-collapse:collapse;border-spacing:0;'>
+                    <button style='width:15px;height:15px;vertical-align:top;display:inline-block;border:none;border-radius:50%;text-align:center;text-transform:none;padding:0;background:#FEC400;cursor:pointer;overflow:hidden;' title='Search' type='submit'>
+                        <img src='https://dictionary.cambridge.org/external/images/freesearch/search.png?version=6.0.73' style='vertical-align:-1px;border:none;height:auto;margin:0;padding:0;text-align:center;'/>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<h1>The Franks (Click paragraphs to change reading level)</h1>
+
+<div class="para" onclick="toggleText(this, 0)"></div>
+<div class="para" onclick="toggleText(this, 1)"></div>
+<div class="para" onclick="toggleText(this, 2)"></div>
+<div class="para" onclick="toggleText(this, 3)"></div>
+<div class="para" onclick="toggleText(this, 4)"></div>
+<div class="para" onclick="toggleText(this, 5)"></div>
+<div class="para" onclick="toggleText(this, 6)"></div>
+
+</div>
+
+<!-- Right-hand image column -->
+<div class="image-column">
+    <div class="img-container">
+        <img src="images/250px-Charles_I,_Holy_Roman_Emperor.jpg" alt="Charlemagne">
+        <div class="caption">The Emperor of the Franks Charlemagne</div>
+    </div>
+    <div class="img-container">
+    
+        <img src="images/M370724_Castles-offered-Frankish-peasants-protection-from-Norman-raids.jpg" alt="Charlemagne Coronation">
+        <div class="caption">A Frankish Castle</div>
+    </div>
+    <div class="img-container">
+         <img src="images/a1a8d808-5f41-47e0-898f-fe2a19b9f491_653x547.jpg" alt="Frankish Castle">
+        <div class="caption">Charlemagne is crowned by the Catholic Pope</div>
+    </div>
+</div>
+
+<script>
+const paragraphs = [
+    [
+        // Original with vocabulary
+        "The <span class='vocab' data-definition='A group of Germanic tribes in Europe'>Franks</span> were a group of people from Germanic tribes who became powerful in Western Europe after the fall of the Roman Empire in the late 5th century. Their kingdom was very different from the Roman Empire, especially in how it was <span class='vocab' data-definition='To organize or control'>governed</span>. While the Romans had a strong, centralized government, the Franks had a more <span class='vocab' data-definition='Power spread out among local leaders'>decentralized</span> system, meaning power was spread out among local leaders.",
+        "The Franks were a group of people from Germanic tribes who became powerful in Western Europe after the Roman Empire fell in the late 400s. Their kingdom was very different from the Roman Empire, especially in how it was run. The Romans had a strong central government, but the Franks spread power out among local leaders.",
+        "The Franks were a group of people from German tribes. They became strong in Western Europe after the Roman Empire fell. Their kingdom was different from the Romans. The Romans had one strong government, but the Franks shared power with local leaders."
+    ],
+    [
+        "In the Roman Empire, the emperor had total control, and officials in the provinces reported directly to him. The Franks, however, didn’t have this kind of central control. Instead, local lords, called counts or dukes, ruled their own areas. These lords were responsible for protecting their land, collecting taxes, and keeping order. The Frankish king relied on these lords for support, rather than having direct control over everything.",
+        "In the Roman Empire, the emperor had total control, and leaders in different areas reported to him. The Franks did not have this kind of system. Instead, local leaders called counts or dukes ruled their own lands. They protected their people, collected taxes, and kept order. The Frankish king depended on these local leaders for support instead of controlling everything directly.",
+        "In the Roman Empire, one emperor was in charge of everything. Leaders in other places listened to him. The Franks were different. Local leaders called counts or dukes ruled their own land. They protected people, collected taxes, and kept order. The king needed their help instead of controlling everything himself."
+    ],
+    [
+        "Because power was spread out, the Franks didn’t have a single, strong army like the Romans. Instead, local lords built castles to defend their lands. These castles were often built on hills or in strategic locations and served as both military bases and homes for the lords. This was very different from the Romans, who built large walls and had professional soldiers stationed across the empire.",
+        "Because power was spread out, the Franks did not have one large, organized army like the Romans. Local lords built castles to defend their land. These castles were often built on hills or in important places and were used as homes and military bases. This was different from the Romans, who built large walls and had trained soldiers across their empire.",
+        "The Franks did not have one big army like the Romans. Instead, local lords built castles to protect their land. These castles were often on hills or in strong spots. They were homes and places to fight from. The Romans built big walls and had trained soldiers across their empire."
+    ],
+    [
+        "Even though the Franks were different from the Romans, they borrowed a lot from Roman culture. They used the Latin language, followed Roman laws, and adopted Christianity. For example, the Frankish king Clovis I converted to Christianity, which helped him gain support from the Church and the people. Later, Charlemagne was crowned “Emperor of the Romans” by the pope in 800 CE.",
+        "Even though the Franks were different, they copied many parts of Roman culture. They used Latin, followed Roman laws, and became Christians. For example, the Frankish king Clovis I became a Christian, which helped him gain support from the Church and the people. Later, Charlemagne was crowned “Emperor of the Romans” in 800 CE.",
+        "The Franks copied some Roman ideas. They used the Latin language and followed some Roman laws. They also became Christians. A king named Clovis became a Christian and gained support from the Church. Later, a king named Charlemagne was crowned “Emperor of the Romans” in 800 CE."
+    ],
+    [
+        "One big difference between the Franks and the Romans was their use of writing. The Romans wrote down almost everything—laws, history, and literature. The Franks, however, left very few written records. Most of what we know about them comes from <span class='vocab' data-definition='The study of human history through excavation of sites'>archaeology</span>, Church writings, and stories from other cultures.",
+        "Another difference was how much they wrote things down. The Romans recorded many things like laws, history, and stories. The Franks wrote much less. Most of what we know about them comes from archaeology, Church records, and stories from other groups.",
+        "The Romans wrote many things down, like laws and history. The Franks did not write as much. We learn about them from old objects, Church records, and stories from other people. This makes them harder to study."
+    ],
+    [
+        "When a Frankish king died, his kingdom was often split among his sons. This practice, called <span class='vocab' data-definition='Dividing property among children'>partible inheritance</span>, led to a lot of fighting and weakened the kingdom. For example, after Charlemagne’s death, his empire was divided into three parts in 843 CE.",
+        "When a Frankish king died, his land was often divided between his sons. This system was called partible inheritance. It often caused fighting and made the kingdom weaker. After Charlemagne died, his empire was split into three parts in 843 CE.",
+        "When a Frankish king died, his land was often split between his sons. This caused fighting and made the kingdom weaker. After Charlemagne died, his empire was split into three parts."
+    ],
+    [
+        "Frankish society was led by a group of warrior elites who were skilled fighters and landowners. Below them were farmers, craftsmen, and others. The Franks also included people from many different cultures, like former Romans and other Germanic tribes.",
+        "Frankish society was led by strong warriors who owned land. Below them were farmers, craftspeople, and other workers. The Franks also included people from different backgrounds, such as former Romans and other tribes.",
+        "Frankish society had strong warriors at the top. They owned land. Below them were farmers and workers. The Franks included people from many backgrounds."
+    ]
+];
+
+let states = [0,0,0,0,0,0,0];
+
+function toggleText(element, index) {
+    states[index] = (states[index] + 1) % 3;
+    element.innerHTML = paragraphs[index][states[index]];
+
+    // Change color: 0=black, 1=blue, 2=green
+    const colors = ["black", "blue", "green"];
+    element.style.color = colors[states[index]];
+}
+
+// Initialize with original text
+document.querySelectorAll('.para').forEach((el, i) => {
+    el.innerHTML = paragraphs[i][0];
+    el.style.color = "black";
+});
+</script>
+
+</body>
+</html>
