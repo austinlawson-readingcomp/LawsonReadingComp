@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Boer War and Canada</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .content {
+    flex: 2;
+    max-width: 65%;
+  }
+
+  .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .images img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  p {
+    line-height: 1.6;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+
+  .low {
+    color: blue;
+    display: none;
+  }
+
+  .vocab {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+    position: relative;
+  }
+
+  .vocab:hover::after {
+    content: attr(data-definition);
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 1.5em;
+    left: 0;
+    white-space: normal;
+    z-index: 10;
+    width: 300px;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>The Boer War and Canada: A Divided Nation</h1>
+  <h2>Interactive Reading</h2>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">The Boer War (1899–1902), also called the South African War, was one of the first major international conflicts in which Canada took part. Even though the war happened far away in southern Africa, it had an important effect on Canada. It helped shape how Canadians thought about their country, Britain, and Canada’s place in the world.</span>
+    <span class="low">The Boer War happened from 1899 to 1902 in southern Africa. It was one of the first big wars where Canada took part. Even though it was far away, it changed how Canadians thought about Canada, Britain, and their place in the world.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">The war was fought between the British <span class="vocab" data-definition="A group of countries ruled by one powerful nation">Empire</span> and two independent Boer <span class="vocab" data-definition="Countries led by elected leaders instead of a king or queen">republics</span>: the South African Republic, also called the Transvaal, and the Orange Free State. The Boers were descendants of Dutch settlers who had created their own governments in southern Africa.</span>
+    <span class="low">The war was fought between the British Empire and two Boer countries: the Transvaal and the Orange Free State. The Boers were people whose families came from Dutch settlers and who had their own governments in South Africa.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">One important cause of the war was the discovery of gold and diamonds, also called <span class="vocab" data-definition="Valuable natural resources such as gold and diamonds">mineral wealth</span>, in Boer-controlled lands. These valuable resources attracted many outsiders, including British workers and business leaders. Britain wanted greater control over these rich areas for both economic and imperial reasons.</span>
+    <span class="low">One important cause of the war was the discovery of gold and diamonds in Boer land. These valuable resources brought many people to the area, including British workers and business leaders. Britain wanted more control over this rich land because it wanted money and power.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">As time passed, <span class="vocab" data-definition="Feelings of conflict or disagreement">tensions</span> between Britain and the Boer republics increased. They argued over political rights, land, and control of resources. In 1899, these disagreements grew so serious that war broke out.</span>
+    <span class="low">As time went on, Britain and the Boer republics had more and more disagreements. They argued about rights, land, and who would control resources. In 1899, these problems became so serious that war began.</span>
+  </p>
+    <p onclick="toggleParagraph(this)">
+    <span class="high">At the time of the Boer War, Canada was still a <span class="vocab" data-definition="A self-governing country that is still part of a larger empire">dominion</span> within the British Empire. This meant that Canada controlled many of its own laws and <span class="vocab" data-definition="Things that happen inside a country, such as its own laws and decisions">internal affairs</span>, but it was still closely tied to Britain in foreign policy and military matters.</span>
+    <span class="low">At the time of the Boer War, Canada was still part of the British Empire. Canada made many of its own decisions at home, but it was still closely connected to Britain in war and foreign affairs.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">When war began, Britain expected help from its <span class="vocab" data-definition="Lands ruled by people from another country">colonies</span> and dominions, including Canada. Many people believed Canada should support Britain because of its place in the empire. However, not everyone agreed that Canada should become involved in a war so far from home.</span>
+    <span class="low">When the war started, Britain expected help from places it controlled, including Canada. Many people thought Canada should help Britain because it was part of the empire. But not everyone agreed that Canada should join a war far away.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">Prime Minister Wilfrid Laurier faced strong pressure from both sides. Some Canadians wanted full support for Britain, while others argued that Canada should stay out of the conflict. Laurier tried to find a middle path by agreeing to send volunteer soldiers instead of forcing Canadians to fight.</span>
+    <span class="low">Prime Minister Wilfrid Laurier was under pressure from both sides. Some Canadians wanted to strongly support Britain, while others wanted Canada to stay out of the war. Laurier chose a middle path by sending volunteer soldiers instead of forcing people to go.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">The Boer War deeply divided Canadians, especially along language and cultural lines. Many English-speaking Canadians felt loyal to Britain and saw the war as a chance for Canada to prove its strength. They believed helping Britain would show that Canada was maturing as a country.</span>
+    <span class="low">The Boer War caused a lot of division in Canada, especially between English-speaking and French-speaking people. Many English Canadians felt loyal to Britain and saw the war as a chance for Canada to show its strength. They thought helping Britain would prove Canada was growing as a country.</span>
+  </p>
+    <p onclick="toggleParagraph(this)">
+    <span class="high">In contrast, many French Canadians opposed the war. They did not feel the same attachment to Britain and believed Canada should not be drawn into imperial conflicts that did not directly affect it. French Canadian nationalist leader Henri Bourassa argued strongly against Canada’s involvement.</span>
+    <span class="low">Many French Canadians did not support the war. They did not feel connected to Britain and believed Canada should not join a war that did not affect it. A leader named Henri Bourassa strongly spoke against Canada joining the war.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">This disagreement led to heated debates across the country. Newspapers, politicians, and citizens argued about Canada’s role in the war and its relationship with Britain. These divisions showed that Canada was not united in its views about imperial loyalty and independence.</span>
+    <span class="low">This disagreement caused strong arguments across Canada. People debated in newspapers and in politics about whether Canada should join the war. These disagreements showed that Canadians did not all think the same about Britain and independence.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">In the end, Canada sent more than 7,000 volunteer soldiers to South Africa. These soldiers served alongside British forces in a number of military <span class="vocab" data-definition="A series of planned battles or actions during a war">campaigns</span> throughout the conflict.</span>
+    <span class="low">In the end, Canada sent more than 7,000 volunteer soldiers to South Africa. They fought with British soldiers in many battles during the war.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">One of the most important moments for Canadian troops came at the Battle of Paardeberg in 1900. Canadian soldiers played a key role in the victory, showing bravery, strong <span class="vocab" data-definition="The ability to follow rules and stay focused">discipline</span>, and skill in difficult conditions.</span>
+    <span class="low">One important moment for Canadian soldiers was the Battle of Paardeberg in 1900. They helped win the battle and showed bravery, focus, and skill in hard conditions.</span>
+  </p>
+    <p onclick="toggleParagraph(this)">
+    <span class="high">Canadian soldiers also faced harsh conditions during the war, including extreme heat, disease, and difficult <span class="vocab" data-definition="The type of land, such as mountains, deserts, or fields">terrain</span>. Despite these challenges, they proved themselves to be capable and effective fighters.</span>
+    <span class="low">Canadian soldiers faced very hard conditions like extreme heat, sickness, and rough land. Even with these challenges, they showed they were strong and capable fighters.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">Although the war was <span class="vocab" data-definition="Something that causes strong disagreement or different opinions">controversial</span> at home, many Canadians felt proud of the soldiers’ actions. Their success helped build a sense of national <span class="vocab" data-definition="How people see themselves as part of a country">identity</span> and confidence in Canada.</span>
+    <span class="low">Even though people disagreed about the war, many Canadians felt proud of the soldiers. Their success helped Canadians feel proud of their country and who they were.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">For many English Canadians, participation in the war strengthened their connection to Britain. At the same time, it also helped in <span class="vocab" data-definition="Helping something grow or develop">fostering</span> a growing sense of Canadian pride and independence.</span>
+    <span class="low">For many English Canadians, the war made them feel closer to Britain. At the same time, it helped grow pride in Canada and a sense of independence.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">However, one of the most troubling parts of the war was the British use of <span class="vocab" data-definition="Places where large groups of people are kept, often in poor conditions">concentration camps</span>. To weaken Boer resistance, British forces destroyed farms and forced many civilians—mostly women and children—into these camps.</span>
+    <span class="low">One of the worst parts of the war was that the British used camps to hold people. They destroyed farms and forced many women and children into these camps.</span>
+  </p>
+    <p onclick="toggleParagraph(this)">
+    <span class="high">Conditions in the camps were extremely poor, with <span class="vocab" data-definition="Too many people in one space">overcrowding</span>, limited food, and poor <span class="vocab" data-definition="Cleanliness and systems to keep people healthy">sanitation</span>. As a result, thousands of people died from disease and <span class="vocab" data-definition="Poor health caused by not having enough food or nutrients">malnutrition</span>.</span>
+    <span class="low">Life in the camps was very hard. There were too many people, not enough food, and poor cleanliness. Because of this, many people got sick and died.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">News of these camps shocked people around the world, including many Canadians. Some began to question the <span class="vocab" data-definition="Ideas about what is right and wrong">morality</span> of the war and whether Canada should have taken part.</span>
+    <span class="low">When people learned about the camps, they were shocked. Many Canadians began to wonder if the war was right or wrong.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">The Boer War had lasting effects on Canada. It helped increase national pride and showed that Canadian soldiers could succeed in international conflicts. However, it also deepened divisions between French and English Canadians.</span>
+    <span class="low">The war had lasting effects on Canada. It made some people feel proud and showed Canadian soldiers could succeed. But it also caused more disagreement between French and English Canadians.</span>
+  </p>
+
+  <p onclick="toggleParagraph(this)">
+    <span class="high">In the end, the Boer War was an important moment in Canada’s history. It showed both Canada’s growing strength and the challenges of being part of the British Empire. It also helped shape Canada’s path toward becoming a more independent nation.</span>
+    <span class="low">In the end, the Boer War was an important event in Canada’s history. It showed both strength and challenges. It also helped Canada move toward becoming more independent.</span>
+  </p>
+
+</div>
+
+<div class="images">
+  <img src="images\Afrikaner_Commandos2.jpg" alt="Boer Commandos" title="Boer commandos in the Second Boer War">
+  <img src="images\CanadianMountedRifles.jpg" alt="2nd Canadian Mounted Rifles on the March" title="The 2nd Canadian Mounted Rifles on the March in South Africa">
+  <img src="images\scorchedearth.jpg" alt="A burning Boer farmhouse" title="The British scored earth policy involved the burning of Boer farms and the relocation of Boer families to concentration camps">
+</div>
+
+<script>
+function toggleParagraph(p) {
+  const high = p.querySelector('.high');
+  const low = p.querySelector('.low');
+  if(high.style.display === 'none') {
+    high.style.display = 'inline';
+    low.style.display = 'none';
+  } else {
+    high.style.display = 'none';
+    low.style.display = 'inline';
+  }
+}
+</script>
+
+</body>
+</html>
