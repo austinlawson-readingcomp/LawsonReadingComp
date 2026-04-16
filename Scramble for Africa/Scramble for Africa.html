@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scramble for Africa Interactive Text</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .content {
+    flex: 2;
+    max-width: 65%;
+  }
+
+  .images {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .images img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  p {
+    line-height: 1.6;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+
+  .low {
+    color: blue;
+    display: none;
+  }
+
+  .vocab {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+    position: relative;
+  }
+
+  .vocab:hover::after {
+    content: attr(data-definition);
+    position: absolute;
+    background: #f9f9f9;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: 1.5em;
+    left: 0;
+    white-space: normal;
+    z-index: 10;
+    width: 300px;
+  }
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h1>The Scramble for Africa</h1>
+  <h2>Interactive Reading</h2>
+
+  <!-- Paragraph 1 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      The “Scramble for Africa” refers to the rapid <span class="vocab" data-definition="taking control of a place by force">invasion</span>, <span class="vocab" data-definition="when a place is taken over and controlled">occupation</span>, and <span class="vocab" data-definition="splitting land into parts">division</span> of Africa by European powers during the late 1800s. Between about 1880 and 1914, most of the African continent was taken over by European countries. This period changed Africa’s <span class="vocab" data-definition="related to government and leadership">political</span>, <span class="vocab" data-definition="related to money and resources">economic</span>, and social systems in major ways that still have effects today. This chapter explains why European countries wanted control of Africa, how they carried out <span class="vocab" data-definition="when a country takes control of other lands">imperialism</span>, and what the consequences were for African people.
+    </span>
+    <span class="low">
+      The “Scramble for Africa” means a time when European countries quickly moved into Africa and took control of the land. From about 1880 to 1914, most of Africa was taken over. This changed how people lived, worked, and were governed. These changes still matter today. In this chapter, you will learn why Europeans wanted Africa, how they took control, and how this affected African people.
+    </span>
+  </p>
+
+  <!-- Paragraph 2 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      <span class="vocab" data-definition="when a country expands its power over other lands">Imperialism</span> is when a country extends its power over other lands and peoples, often by force. European nations believed it was their right to control other regions for economic and political gain. There were several reasons for imperialism in Africa. Economically, European countries wanted access to valuable raw materials such as gold, rubber, and diamonds, which were needed for growing industries. Politically, countries competed with one another to gain more land and power, believing that more territory meant greater strength. <span class="vocab" data-definition="a strong feeling of pride in one's country">National pride</span> also played a role, as having colonies made nations feel important and successful. In addition, some Europeans believed they were <span class="vocab" data-definition="believing one group is better than others">superior</span> and thought it was their duty to “civilize” other peoples.
+    </span>
+    <span class="low">
+      Imperialism is when a country takes control of other places and the people who live there. European countries thought they had the right to do this. They wanted land for different reasons. They wanted resources like gold and rubber to help their factories. They also wanted more power than other countries. Having colonies made them feel strong and proud. Some Europeans believed their way of life was better and thought they should change other people’s cultures.
+    </span>
+  </p>
+
+  <!-- Paragraph 3 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      Several European nations took part in the Scramble for Africa, with the most powerful countries claiming the largest areas. Britain controlled large regions such as Egypt, South Africa, and Nigeria, while France took over much of West and North Africa. Germany claimed territories including present-day Tanzania and Namibia, while Belgium controlled the Congo, which became one of the most heavily <span class="vocab" data-definition="treated unfairly for profit">exploited</span> regions. Portugal and Spain also held smaller territories. As competition increased, tensions grew between these countries. To avoid war, leaders met at the <span class="vocab" data-definition="a meeting where European countries divided Africa">Berlin Conference</span> (1884–1885) and divided Africa without any African representation.
+    </span>
+    <span class="low">
+      Many European countries took part in the Scramble for Africa. The strongest countries took the most land. Britain controlled places like Egypt, South Africa, and Nigeria. France took much of West and North Africa. Germany took areas like Tanzania and Namibia. Belgium controlled the Congo and treated it very harshly. Portugal and Spain had smaller areas near the coast. As these countries competed, they argued over land. To stop fighting, they met at the Berlin Conference and divided Africa without asking African people.
+    </span>
+  </p>
+    <!-- Paragraph 4 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      <span class="vocab" data-definition="the practice of settling in and ruling another land">Colonialism</span> is the practice of settling people in another land and ruling over it. After dividing Africa, European powers established colonies where they controlled governments and economies. European <span class="vocab" data-definition="people who work for the government and have authority">officials</span> made laws and decisions, often ignoring existing African political systems. In many cases, African leaders were removed from power or forced to cooperate with colonial rulers. The borders that Europeans created did not take into account the many different <span class="vocab" data-definition="groups of people who share a culture, language, or background">ethnic</span> and cultural groups living in Africa. As a result, people who had little in common were grouped together, while others were separated. These <span class="vocab" data-definition="made by people rather than naturally formed">artificial</span> borders later caused conflicts that continue in some parts of Africa today.
+    </span>
+    <span class="low">
+      Colonialism is when people move to another land and rule it. After dividing Africa, Europeans set up colonies and took control of governments and money systems. European leaders made the rules and often ignored African traditions. Many African leaders lost their power or had to follow European orders. The borders Europeans drew did not match the different groups living there. This caused problems because some groups were forced together and others were split apart. These borders still cause conflict today.
+    </span>
+  </p>
+
+  <!-- Paragraph 5 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      One of the main goals of imperialism in Africa was <span class="vocab" data-definition="taking natural resources from the land to use or sell">resource extraction</span>, which means removing natural resources to benefit the controlling country. European nations focused on resources such as rubber, gold, diamonds, ivory, and palm oil. To support this process, they built railways and roads, but these were mainly designed to transport resources to ports rather than improve life for local people. Most of the wealth created from these resources was sent back to Europe, and very little was invested in African communities. This left many regions <span class="vocab" data-definition="not fully built up with industry, services, or wealth">underdeveloped</span> and dependent on exporting raw materials.
+    </span>
+    <span class="low">
+      A main goal of imperialism was to take resources from Africa. This is called resource extraction. Europeans wanted things like rubber, gold, diamonds, ivory, and palm oil. They built railways and roads, but mostly to move these resources to ships. These systems did not help local people very much. Most of the money made from these resources went back to Europe. Because of this, many African areas stayed poor and depended on selling raw materials.
+    </span>
+  </p>
+
+  <!-- Paragraph 6 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      To extract resources, colonial governments relied heavily on African <span class="vocab" data-definition="work done by people">labour</span>. However, this labour was often <span class="vocab" data-definition="treated unfairly for someone else's gain">exploited</span>. Many Africans were forced to work under harsh conditions, sometimes without pay or under threat of violence. Even when workers were paid, <span class="vocab" data-definition="money earned for work">wages</span> were extremely low compared to the amount of work required. Working conditions were often dangerous, with long hours and little protection. One of the most extreme examples occurred in the Congo under Belgian rule, where millions of people suffered and died due to brutal treatment while collecting rubber. This shows how far colonial powers were willing to go to gain wealth.
+    </span>
+    <span class="low">
+      To get these resources, Europeans used African workers. Many workers were treated unfairly. Some were forced to work without pay or were threatened with punishment. Others were paid very little money for hard work. The jobs were often dangerous and lasted many hours. In the Congo, under Belgian rule, millions of people were hurt or died while collecting rubber. This shows how badly people were treated so Europeans could become rich.
+    </span>
+  </p>
+
+  <!-- Paragraph 7 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      The Scramble for Africa led to <span class="vocab" data-definition="serious disagreement or fighting">conflict</span> both between European countries and within Africa itself. European nations sometimes came close to fighting each other over land, increasing tensions that would later contribute to larger conflicts in Europe. At the same time, African people showed <span class="vocab" data-definition="fighting back or refusing to accept control">resistance</span> to colonial rule in many ways. Some groups fought back with armed resistance, while others refused to cooperate with colonial governments or worked to preserve their cultural traditions. For example, the Zulu people resisted British expansion in southern Africa, and Ethiopia successfully defended itself against Italian invasion in 1896. These examples show that Africans did not simply accept European control.
+    </span>
+    <span class="low">
+      The Scramble for Africa caused many conflicts. European countries argued over land and sometimes almost went to war. At the same time, African people resisted being controlled. Some groups fought back with weapons. Others refused to follow European rules or tried to keep their culture strong. For example, the Zulu fought against the British, and Ethiopia defeated Italy in 1896. These examples show that Africans did not give up without a fight.
+    </span>
+  </p>
+    <!-- Paragraph 8 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      The effects of the Scramble for Africa are still visible today. Economically, many African countries were left with systems focused on exporting raw materials rather than developing industries, which has made economic growth more difficult. Politically, the borders created during colonization caused tensions between different groups, leading to <span class="vocab" data-definition="a lack of stability or peace">instability</span> and conflict in some regions. Socially, traditional cultures and systems were disrupted by European influence. Even after gaining <span class="vocab" data-definition="the freedom to govern yourself">independence</span> in the 20th century, many African countries continued to face challenges linked to this period of imperialism.
+    </span>
+    <span class="low">
+      The effects of the Scramble for Africa can still be seen today. Many countries still rely on selling raw materials instead of making finished goods. This makes it harder for them to grow economically. The borders created by Europeans caused problems between different groups, leading to conflict in some places. European rule also changed many cultures and ways of life. Even after becoming independent, many African countries still face these challenges.
+    </span>
+  </p>
+
+  <!-- Paragraph 9 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      <span class="vocab" data-definition="when a country expands its power over other lands">Imperialism</span> refers to expanding a country’s power over other lands. <span class="vocab" data-definition="the act of settling in and ruling another land">Colonialism</span> is the act of settling and ruling over foreign lands. <span class="vocab" data-definition="taking natural resources from the land to use or sell">Resource extraction</span> means removing natural resources for profit. <span class="vocab" data-definition="treating people unfairly for personal gain">Exploitation</span> is treating people unfairly for personal gain.
+    </span>
+    <span class="low">
+      Imperialism means taking control of other lands. Colonialism means settling in and ruling another place. Resource extraction means taking natural resources to use or sell. Exploitation means treating people unfairly to benefit yourself.
+    </span>
+  </p>
+
+  <!-- Paragraph 10 -->
+  <p onclick="toggleParagraph(this)">
+    <span class="high">
+      The Scramble for Africa was a period of intense imperial expansion by European powers. Driven by economic, political, and cultural motives, these countries divided Africa and established colonies. This led to resource extraction, exploitation of labour, and widespread conflict. The <span class="vocab" data-definition="something handed down from the past that still affects people today">legacy</span> of this period continues to shape Africa today.
+    </span>
+    <span class="low">
+      The Scramble for Africa was a time when European countries took over much of Africa. They wanted resources, power, and control. This led to unfair treatment of workers, taking of resources, and many conflicts. The effects of this time are still important today.
+    </span>
+  </p>
+  </div>
+
+<!-- Right Column: Images -->
+<div class="images">
+  <img src="Images\Scramble-for-Africa-1880-1913-v2.png" alt="Map of Africa during the Scramble" title="Map of Africa before and after the Scramble for Africa">
+  <img src="Images\960px-Kongokonferenz.jpg" alt="The Berlin Conference" title="During the Berlin conference, the rulers of Europe decided how to divide Africa.">
+  <img src="Images\StoryoftheCongoFreeState_280.jpg" alt="Rubber collection in the Congo" title="Congolese workers collecting rubber in the Belgian Congo. Rubber was a key resource in the 19th century and African workers were forced to work in harsh conditions.">
+  <img src="Images\Adoua_1.jpg" alt="African resistance fighters" title="Not every country in Africa was colonized. During the battle of Adwa, Ethiopians successfully defeated Italian attempts to colonize their country.">
+</div>
+
+<script>
+  function toggleParagraph(p) {
+    const high = p.querySelector('.high');
+    const low = p.querySelector('.low');
+    if(high.style.display === 'none') {
+      high.style.display = 'inline';
+      low.style.display = 'none';
+    } else {
+      high.style.display = 'none';
+      low.style.display = 'inline';
+    }
+  }
+</script>
+
+</body>
+</html>
